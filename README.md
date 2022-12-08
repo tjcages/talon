@@ -1,4 +1,4 @@
-# Talon
+# TALON
 
 ![Preview](https://github.com/tjcages/talon/raw/main/public/preview.gif)
 
