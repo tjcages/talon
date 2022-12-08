@@ -1,0 +1,22 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto;
+  gap: 40px;
+
+  justify-content: center;
+  align-items: center;
+
+  .video {
+    width: 100px;
+    height: auto;
+
+    filter: brightness(100%) saturate(100%) contrast(120%);
+    mix-blend-mode: screen;
+    isolation: isolate;
+  }
+
+  .video:nth-child(3) {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
