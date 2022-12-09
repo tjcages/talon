@@ -13,6 +13,8 @@ const Gun = ({ gun }) => {
     vid.crossOrigin = "Anonymous";
     vid.loop = true;
     vid.muted = true;
+    vid.loop = true;
+    vid.playsInline = true;
     vid.play();
 
     return vid;

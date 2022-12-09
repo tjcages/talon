@@ -7,16 +7,26 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: 768px) {
+    & {
+      gap: 0; 
+      margin-top: 10px;
+      margin-bottom: auto;
+    }
+  }
+
   .video {
-    width: 100px;
+    width: 140px;
     height: auto;
 
     filter: brightness(100%) saturate(100%) contrast(120%);
     mix-blend-mode: screen;
     isolation: isolate;
-  }
-
-  .video:nth-child(3) {
-    transform: rotate3d(0, 1, 0, 180deg);
+    
+    @media only screen and (max-width: 768px) {
+      & {
+        width: 100px;
+      }
+    }
   }
 }

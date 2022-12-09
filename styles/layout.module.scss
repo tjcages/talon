@@ -19,6 +19,13 @@
   user-select: none;
   pointer-events: none;
 
+  @media only screen and (max-width: 768px) {
+    & {
+      grid-template-columns: minmax(auto, 20px) 1fr minmax(auto, 20px);
+      grid-template-rows: minmax(auto, 80px) 1fr minmax(auto, 80px);
+    }
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -99,11 +106,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-
-        /* background-color: transparent;
-        opacity: 0.05;
-        background-image: radial-gradient(var(--primaryColor) 2px, transparent 0.5px);
-        background-size: 50px 50px; */
 
         background-color: transparent;
         opacity: 0.3;

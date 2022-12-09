@@ -10,19 +10,19 @@ export default function Home() {
   const interval = 4000;
   const guns = [
     {
-      name: "Sig 338",
+      name: "338",
       image: "/sig.jpg",
       video: "../sig.mov",
     },
     {
       name: "AR-15",
       image: "/ar15.jpg",
-      video: "../ar15.mov",
+      video: "../ar15.mp4",
     },
     {
       name: "AK-47",
       image: "/ak47.jpg",
-      video: "../ak47.mov",
+      video: "../ak47.mp4",
     },
   ];
 

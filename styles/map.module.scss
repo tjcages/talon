@@ -21,6 +21,12 @@
     calc(100% - 1rem) 0%
   );
 
+  @media only screen and (max-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+
   .inner {
     position: absolute;
     top: 1px;

@@ -21,6 +21,17 @@
     calc(100% - 1rem) 0%
   );
 
+  @media only screen and (max-width: 768px) {
+    & {
+      top: auto;
+      left: 30px;
+      bottom: 90px;
+
+      transform: scale(0.8);
+      transform-origin: bottom left;
+    }
+  }
+
   .inner {
     position: absolute;
     top: 1px;
@@ -73,7 +84,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-    
+
       border: 1px solid var(--borderColor);
     }
 
