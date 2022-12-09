@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 
+import useMediaQuery, { mobileBreakpoint } from "../modules/device";
+
 import Meta from "../components/Meta";
 import Layout from "../components/Layout";
 import Content from "../components/Content";
 
 export default function Home() {
+  const mobile = useMediaQuery(mobileBreakpoint);
+
   const [selected, setSelected] = useState(0);
 
   const interval = 4000;
@@ -12,17 +16,17 @@ export default function Home() {
     {
       name: "338",
       image: "/sig.jpg",
-      video: "../sig.mov",
+      video: mobile ? "../sig_mobile.mp4" : "../sig.mp4",
     },
     {
       name: "AR-15",
       image: "/ar15.jpg",
-      video: "../ar15.mp4",
+      video: mobile ? "../ar15_mobile.mp4" : "../ar15.mp4",
     },
     {
       name: "AK-47",
       image: "/ak47.jpg",
-      video: "../ak47.mp4",
+      video: mobile ? "../ak47_mobile.mp4" : "../ak47.mp4",
     },
   ];
 

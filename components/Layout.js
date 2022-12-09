@@ -17,6 +17,7 @@ const Layout = ({ children, gun }) => {
       {/* Header */}
       <div className={styles.tile}>
         <Image
+          className={styles.corner}
           style={{ transform: "rotate(270deg)" }}
           src="/corner.svg"
           alt="corner"

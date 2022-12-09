@@ -6,23 +6,8 @@ const Meta = (props) => {
   const description =
     props.description ??
     "tbd";
-  const image = props.image ?? "";
-  const url = props.url ?? "";
-
-  const [faviconHref, setFaviconHref] = useState("/favicon.ico");
-
-  useEffect(() => {
-    // Get current color scheme.
-    const matcher = window.matchMedia("(prefers-color-scheme: dark)");
-    // Set favicon initially.
-    setFaviconHref(getFaviconPath(matcher.matches));
-    // Change favicon if the color scheme changes.
-    matcher.onchange = () => setFaviconHref(getFaviconPath(matcher.matches));
-  }, [faviconHref]);
-
-  const getFaviconPath = (isDarkMode = false) => {
-    return isDarkMode ? "/favicon-dark.ico" : "/favicon.ico";
-  };
+  const image = props.image ?? "/preview.jpg";
+  const url = props.url ?? "http://talonuae.com/";
 
   return (
     <>
@@ -57,7 +42,7 @@ const Meta = (props) => {
           key="twitter:creator"
         />
 
-        <link rel="icon" href={faviconHref} />
+        <link rel="icon" href={"/favicon.ico"} />
       </Head>
       {props.children}
     </>
