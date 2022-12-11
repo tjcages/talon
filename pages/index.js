@@ -14,7 +14,7 @@ export default function Home() {
   const interval = 4000;
   const guns = [
     {
-      name: "338",
+      name: "Talon 338",
       image: "/sig.jpg",
       video: mobile ? "../sig_mobile.mp4" : "../sig.mp4",
     },
